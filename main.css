@@ -1,10 +1,29 @@
-html,main,body,footer {
+* {
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --carPosition: calc(50% - 50px);
 }
 
 html {
   height: 100vh;
   width: 100vw;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
   background-color: orange;
+}
+
+#car {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(200,100,100);
+  position: absolute;
+  left: var(--carPosition);
+  bottom: 0px;
 }
