@@ -26,4 +26,12 @@ body {
   position: absolute;
   left: var(--carPosition);
   bottom: 0px;
+  animation: jump .75s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0% {transform: translateY(0px);}
+  20% {transform: translateY(-75px);}
+  80% {transform: translateY(-75px);}
+  100% {transform: translateY(0px);}
 }
